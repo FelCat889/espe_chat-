@@ -54,6 +54,8 @@ dependencies:
   agora_uikit: ^1.1.0
   cupertino_icons: ^1.0.5
   country_picker: ^2.0.18
+  flutter_launcher_icons: ^0.11.0
+  rename: ^2.0.1
 
 dev_dependencies:
   flutter_test:
@@ -86,7 +88,10 @@ flutter:
 
   # For details regarding adding assets from package dependencies, see
   # https://flutter.dev/assets-and-images/#from-packages
-
+flutter_icons:
+  android: true
+  ios: true
+  image_path : "assets/app_logo.png"
   # To add custom fonts to your application, add a fonts section here,
   # in this "flutter" section. Each entry in this list should have a
   # "family" key with the font family name, and a "fonts" key with a

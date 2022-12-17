@@ -12,9 +12,10 @@ import 'package:espe_chat/mobile_layout_screen.dart';
 
 
 void main() async {
+
 //   const firebaseConfig = {
 
-//   apiKey: "AIzaSyCl7mn6fV1pqSo23mAZ2XiAaZznrE4lgfk",
+//     apiKey: "AIzaSyCl7mn6fV1pqSo23mAZ2XiAaZznrE4lgfk",
 
 //   authDomain: "bduniversidad-5d746.firebaseapp.com",
 
@@ -33,12 +34,25 @@ void main() async {
 // };
 
 
-// // Initialize Firebase
+//   WidgetsFlutterBinding.ensureInitialized();
+//   //NAVEGADOR
+//  await Firebase.initializeApp(
+//       options: FirebaseOptions(      
+//       apiKey: "AIzaSyCl7mn6fV1pqSo23mAZ2XiAaZznrE4lgfk",
+//       authDomain: "bduniversidad-5d746.firebaseapp.com",
+//       projectId: "bduniversidad-5d746",
+//       storageBucket: "bduniversidad-5d746.appspot.com",
+//       messagingSenderId: "222835281688",
+//       appId: "1:222835281688:web:ffdda5b4cbe68dab17186d",
+//       measurementId: "G-EGMLHHS4LD"
+//    ));
+// Initialize Firebase
 
 // const app = initializeApp(firebaseConfig);
 
 // const analytics = getAnalytics(app);
 
+  //ACTIVATE THIS FOR ANDROID
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
