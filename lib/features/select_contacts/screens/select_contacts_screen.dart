@@ -155,8 +155,11 @@ class MySearchDelegate extends SearchDelegate  {
           return ListTile(
             title: Text(suggestion),
             onTap: () {
-              print(listaAllData[index]);
-              selectContact(ref, listaAllData[index], context);
+              // print(suggestion);
+              //BUSCAR POR NOMBRE LA POSITION
+              var contacto;
+              print(listaAllData.map((e)=>e.displayName == suggestion ? contacto = e : null));
+              selectContact(ref, contacto, context);
               query = suggestion;
             }
           );
