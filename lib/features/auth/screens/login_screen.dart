@@ -36,12 +36,13 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
 
   void sendPhoneNumber() {
     String phoneNumber = phoneController.text.trim();
+    print(phoneNumber);
     if (country != null && phoneNumber.isNotEmpty) {
       ref
           .read(authControllerProvider)
           .signInWithPhone(context, '+${country!.phoneCode}$phoneNumber');
     } else {
-      showSnackBar(context: context, content: 'Fill out all the fields');
+      showSnackBar(context: context, content: 'Llena todos los campos');
     }
   }
 
@@ -51,7 +52,7 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Enter your phone number'),
+        title: const Text('Ingresa tu número de teléfono'),
         elevation: 0,
         backgroundColor: backgroundColor,
       ),
@@ -61,11 +62,11 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              const Text('WhatsApp will need to verify your phone number.'),
+              const Text('EspeChat necesita verificar tu número de teléfono.'),
               const SizedBox(height: 10),
               TextButton(
                 onPressed: pickCountry,
-                child: const Text('Pick Country'),
+                child: const Text('Primero escoge tu código de país'),
               ),
               const SizedBox(height: 5),
               Row(
@@ -76,8 +77,9 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                     width: size.width * 0.7,
                     child: TextField(
                       controller: phoneController,
+                      keyboardType: TextInputType.number,
                       decoration: const InputDecoration(
-                        hintText: 'phone number',
+                        hintText: 'Número de teléfono',
                       ),
                     ),
                   ),
@@ -85,10 +87,11 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
               ),
               SizedBox(height: size.height * 0.6),
               SizedBox(
-                width: 90,
+                width: size.width*0.40,
                 child: CustomButton(
+                  
                   onPressed: sendPhoneNumber,
-                  text: 'NEXT',
+                  text: 'Siguiente',
                 ),
               ),
             ],

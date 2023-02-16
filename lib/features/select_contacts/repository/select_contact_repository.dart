@@ -42,10 +42,19 @@ class SelectContactRepository {
           ' ',
           '',
         );
+        if(!selectedPhoneNum.contains('+')){
+          print('No contiene codigo de region');
+          selectedPhoneNum = selectedPhoneNum.replaceFirst('0', '+593');
+        }
+        print('Num actual selected');
         print(selectedPhoneNum);
         print(userData.phoneNumber);
         print(userData.isOnline);
-        if ('+593992509363' == userData.phoneNumber) {
+        // showSnackBar(
+        //   context: context,
+        //   content: selectedPhoneNum,
+        // );
+        if (selectedPhoneNum == userData.phoneNumber) {
           isFound = true;
           Navigator.pushNamed(
             context,

@@ -25,7 +25,7 @@ class OTPScreen extends ConsumerWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Verifying your number'),
+        title: const Text('Verificando tu número'),
         elevation: 0,
         backgroundColor: backgroundColor,
       ),
@@ -33,7 +33,7 @@ class OTPScreen extends ConsumerWidget {
         child: Column(
           children: [
             const SizedBox(height: 20),
-            const Text('We have sent an SMS with a code.'),
+            const Text('Te hemos envíado un mensaje con tu código.'),
             SizedBox(
               width: size.width * 0.5,
               child: TextField(
@@ -44,7 +44,7 @@ class OTPScreen extends ConsumerWidget {
                     fontSize: 30,
                   ),
                 ),
-                keyboardType: TextInputType.number,
+                  keyboardType: TextInputType.number,
                 onChanged: (val) {
                   if (val.length == 6) {
                     verifyOTP(ref, context, val.trim());

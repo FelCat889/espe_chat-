@@ -51,7 +51,7 @@ class MobileChatScreen extends ConsumerWidget {
                       children: [
                         Text(name),
                         Text(
-                          snapshot.data!.isOnline ? 'online' : 'offline',
+                          snapshot.data!.isOnline ? 'En línea' : 'Desconectado',
                           style: const TextStyle(
                             fontSize: 13,
                             fontWeight: FontWeight.normal,
@@ -62,18 +62,18 @@ class MobileChatScreen extends ConsumerWidget {
                   }),
           centerTitle: false,
           actions: [
-            IconButton(
-              onPressed: () => makeCall(ref, context),
-              icon: const Icon(Icons.video_call),
-            ),
-            IconButton(
-              onPressed: () {},
-              icon: const Icon(Icons.call),
-            ),
-            IconButton(
-              onPressed: () {},
-              icon: const Icon(Icons.more_vert),
-            ),
+            // IconButton(
+            //   onPressed: () => makeCall(ref, context),
+            //   icon: const Icon(Icons.video_call),
+            // ),
+            // IconButton(
+            //   onPressed: () {},
+            //   icon: const Icon(Icons.call),
+            // ),
+            // IconButton(
+            //   onPressed: () {},
+            //   icon: const Icon(Icons.more_vert),
+            // ),
           ],
         ),
         body: Column(

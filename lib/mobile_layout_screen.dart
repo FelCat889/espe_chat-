@@ -23,7 +23,7 @@ class _MobileLayoutScreenState extends ConsumerState<MobileLayoutScreen>
   @override
   void initState() {
     super.initState();
-    tabBarController = TabController(length: 3, vsync: this);
+    tabBarController = TabController(length: 1, vsync: this);
     WidgetsBinding.instance.addObserver(this);
   }
 
@@ -51,7 +51,7 @@ class _MobileLayoutScreenState extends ConsumerState<MobileLayoutScreen>
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-      length: 3,
+      length: 1,
       child: Scaffold(
         appBar: AppBar(
           elevation: 0,
@@ -66,10 +66,10 @@ class _MobileLayoutScreenState extends ConsumerState<MobileLayoutScreen>
             ),
           ),
           actions: [
-            IconButton(
-              icon: const Icon(Icons.search, color: Colors.grey),
-              onPressed: () {},
-            ),
+            // IconButton(
+            //   icon: const Icon(Icons.search, color: Colors.grey),
+            //   onPressed: () {},
+            // ),
             PopupMenuButton(
               icon: const Icon(
                 Icons.more_vert,
@@ -91,7 +91,7 @@ class _MobileLayoutScreenState extends ConsumerState<MobileLayoutScreen>
           bottom: TabBar(
             controller: tabBarController,
             indicatorColor: tabColor,
-            indicatorWeight: 4,
+            indicatorWeight: 1,
             labelColor: tabColor,
             unselectedLabelColor: Colors.grey,
             labelStyle: const TextStyle(
@@ -101,12 +101,12 @@ class _MobileLayoutScreenState extends ConsumerState<MobileLayoutScreen>
               Tab(
                 text: 'CHATS',
               ),
-              Tab(
-                text: 'ESTADOS',
-              ),
-              Tab(
-                text: 'LLAMADAS',
-              ),
+              // Tab(
+              //   text: 'ESTADOS',
+              // ),
+              // Tab(
+              //   text: 'LLAMADAS',
+              // ),
             ],
           ),
         ),
@@ -114,8 +114,8 @@ class _MobileLayoutScreenState extends ConsumerState<MobileLayoutScreen>
           controller: tabBarController,
           children: const [
             ContactsList(),
-            StatusContactsScreen(),
-            Text('Llamadas')
+            // StatusContactsScreen(),
+            // Text('Llamadas')
           ],
         ),
         floatingActionButton: FloatingActionButton(

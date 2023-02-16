@@ -297,7 +297,7 @@ class ChatRepository {
 
       switch (messageEnum) {
         case MessageEnum.image:
-          contactMsg = '📷 Photo';
+          contactMsg = '📷 Foto';
           break;
         case MessageEnum.video:
           contactMsg = '📸 Video';
