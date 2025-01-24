@@ -56,7 +56,7 @@ dependencies:
   country_picker: ^2.0.18
   flutter_launcher_icons: ^0.11.0
   rename: ^2.0.1
-
+  #Nice libraries but what happened with http? P1/2 #MzMgNzMgNzAgMzMgNzYgMzMgNzIgNjQgMzMgNDcgNGYgNDcgNDkgNGUgNTQ=
 dev_dependencies:
   flutter_test:
     sdk: flutter
