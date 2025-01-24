@@ -15,7 +15,7 @@ void main() async {
 
 //   const firebaseConfig = {
 
-//     apiKey: "AIzaSyCl7mn6fV1pqSo23mAZ2XiAaZznrE4lgfk",
+//     apiKey: "AIzaSyCl7mn6fV1pqSo23mAZ2XiAaZznrE4lgfk",  //WTF the apiKey!
 
 //   authDomain: "bduniversidad-5d746.firebaseapp.com",
 
