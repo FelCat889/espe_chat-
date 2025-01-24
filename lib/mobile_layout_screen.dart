@@ -99,7 +99,7 @@ class _MobileLayoutScreenState extends ConsumerState<MobileLayoutScreen>
             ),
             tabs: const [
               Tab(
-                text: 'CHATS',
+                text: 'CHATS',  //It Needs to update the system to include the other options
               ),
               // Tab(
               //   text: 'ESTADOS',
