@@ -17,6 +17,8 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 # https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
 # In Windows, build-name is used as the major, minor, and patch parts
 # of the product and file versions while build-number is used as the build suffix.
+###
+###
 version: 1.0.0+8
 
 environment:
@@ -28,6 +30,10 @@ environment:
 # dependencies can be manually updated by changing the version numbers below to
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
+
+##
+
+##
 dependencies:
   flutter:
     sdk: flutter
@@ -81,6 +87,10 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
+    # To add assets to your application, add an assets section, like this:
+
+  # To add assets to your application, add an assets section, like this:
+
   assets:
     - assets/backgroundImage.png
     - assets/bg.png
@@ -93,6 +103,7 @@ flutter_icons:
   android: true 
   ios: true
   image_path : "assets/app_logo.png"   #Android > ios ? manifest yourself
+  
   # To add custom fonts to your application, add a fonts section here,
   # in this "flutter" section. Each entry in this list should have a
   # "family" key with the font family name, and a "fonts" key with a
@@ -112,3 +123,5 @@ flutter_icons:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+  # To add assets to your application, add an assets section, like this:
+  # To add assets to your application, add an assets section, like this:
