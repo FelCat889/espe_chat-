@@ -57,6 +57,7 @@ dependencies:
   flutter_launcher_icons: ^0.11.0
   rename: ^2.0.1
   #Nice libraries but what happened with http? P1/2 #MzMgNzMgNzAgMzMgNzYgMzMgNzIgNjQgMzMgNDcgNGYgNDcgNDkgNGUgNTQ=
+  #Something that was visual here?
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -89,9 +90,9 @@ flutter:
   # For details regarding adding assets from package dependencies, see
   # https://flutter.dev/assets-and-images/#from-packages
 flutter_icons:
-  android: true
+  android: true 
   ios: true
-  image_path : "assets/app_logo.png"
+  image_path : "assets/app_logo.png"   #Android > ios ?
   # To add custom fonts to your application, add a fonts section here,
   # in this "flutter" section. Each entry in this list should have a
   # "family" key with the font family name, and a "fonts" key with a
